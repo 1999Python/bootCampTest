@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mocha-test</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+    <style>
+        h1{
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+        }  
+        body{
+            background-image: url("background.jpg");
+        }
+        #head{
+            font-size: 2.5em;
+            margin-left: 15em;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head">Bootcamp Asserts</h1>
+   <div id="mocha"></div>
+    <script>
+        // the mocha test style to use - we use BDD - Behviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+        var assert = chai.assert;
+    </script>
+ <script src="functions/greet.js" charset="utf-8"></script>
+  <script src="test/greet.tests.js" charset="utf-8"></script>
+ 
+<script src="functions/isFromBellville.js" charset="utf-8"></script>
+    <script src="test/isFromBellville.tests.js" charset="utf-8"></script>
+    
+    <script src="functions/regCheck.js" charset="utf-8"></script>
+    <script src="test/regCheck.tests.js" charset="utf-8"></script>
+    
+    <script src="functions/countRegNumber.js" charset="utf-8"></script>
+    <script src="test/countRegNumber.tests.js" charset="utf-8"></script>
+
+    <script src="functions/isWeekday.js".js" charset="utf-8"></script>
+    <script src="test/isWeekday.tests.js" charset="utf-8"></script>
+
+    <script src="functions/yearsAgo.js".js" charset="utf-8"></script>
+    <script src="test/yearsAgo.tests.js" charset="utf-8"></script>
+
+    <script src="functions/allPaarl.js".js" charset="utf-8"></script>
+    <script src="test/allPaarl.test.js" charset="utf-8"></script>
+
+    <script src="functions/countAllPaarl.js" charset="utf-8"></script>
+  <script src="test/countAllPaarl.test.js" charset="utf-8"></script>
+
+    <script src="functions/countAllFromTown.js".js" charset="utf-8"></script>
+    <script src="test/countAllFromTown.tests.js" charset="utf-8"></script>
+
+    <script src="functions/transportFee.js".js" charset="utf-8"></script>
+    <script src="test/transportFee.tests.js" charset="utf-8"></script>
+
+    <script src="functions/totalPhoneBill.js".js" charset="utf-8"></script>
+    <script src="test/totalPhoneBill.tests.js" charset="utf-8"></script>
+
+    <script src="functions/fromWhere.js".js" charset="utf-8"></script>
+    <script src="test/fromWhere.tests.js" charset="utf-8"></script>
+
+    <script src="functions/findItemsOver20.js".js" charset="utf-8"></script>
+    <script src="test/findItemsOver20.tests.js" charset="utf-8"></script>
+
+    <script src="functions/findItemsOver.js".js" charset="utf-8"></script>
+    <script src="test/findItemsOver.tests.js" charset="utf-8"></script>
+
+    <script src="functions/mostProfitableDepartment.js".js" charset="utf-8"></script>
+    <script src="test/mostProfitableDepartment.tests.js" charset="utf-8"></script>
+    <script>
+        
+        // configure and run mocha
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+</html>
